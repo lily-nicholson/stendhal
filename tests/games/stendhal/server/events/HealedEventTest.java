@@ -37,7 +37,7 @@ public class HealedEventTest {
     public void testHealedEventTryBroken() {
         HealedEvent event = new HealedEvent(1);
         event.put("amount", "boo boo");
-        assertThat(event.get("amount"), is("boo boo"));
+        assertThat(event.get("amount"), is("wah wah"));
         assertThat(Integer.valueOf(event.getInt("amount")), is(Integer.valueOf(0)));
     }
 
